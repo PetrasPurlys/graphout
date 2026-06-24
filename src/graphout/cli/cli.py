@@ -1,5 +1,6 @@
 import argparse
 import os
+import platform
 from collections import Counter
 from typing import List
 
@@ -13,11 +14,12 @@ class CLI:
     @classmethod
     def parse_args_to_parameters(cls, args: List[str]) -> Parameters:
 
+        cmd_quotes = '"' if platform.system() != 'Windows' else '"""'
         parser = argparse.ArgumentParser(
             prog=default.APP_NAME,
             prefix_chars='-',
-            description=f"A benchmarking tool. Can capture, parse and plot stdout and stderr data. {os.linesep}"
-                       rf"    {default.APP_NAME} -n 12 --proc 6 --out ping_measure -p 'latency:time=([0-9]*)ms' -- ping www.stackoverflow.com -l [payload_bytes] -- 100 1000 10000 20000" + f"{os.linesep}",
+            description=f'A benchmarking tool. Can capture, parse and plot stdout and stderr data. {os.linesep}'
+                       rf'    {default.APP_NAME} -n 12 --proc 6 --out ping_so -p {cmd_quotes}latency:time=([0-9]*)ms{cmd_quotes} --rot-x -- ping www.stackoverflow.com -l [payload_bytes] -- 100 1000 10000 20000' + f'{os.linesep}',
             formatter_class=argparse.RawTextHelpFormatter,
             add_help=True,
             usage=f'{default.APP_NAME} [options] -- command template -- parameters',

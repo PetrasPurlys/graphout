@@ -1,6 +1,6 @@
 [project]
 name = "graphout"
-version = "1.0.2"
+version = "1.0.2.3"
 description = "A tool to capture, measure and plot printed data"
 authors = [{ name = "Petras Purlys", email = "petras.purlys@gmail.com" }]
 requires-python = ">=3.10"
