@@ -4,17 +4,11 @@ _*
 # Exception for __init__.py and others
 !__*__.py
 
-# Data Archives
-#*.parquet
-
 # Generated images
 *.png
 
 # Generated measurements
 *.json
-
-# Result folders
-res_*/
 
 # --- GitHub generated --------------------------------------------------------
 
