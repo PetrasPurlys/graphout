@@ -7,6 +7,9 @@ _*
 # Generated images
 *.png
 
+# Exception for documentation images
+!img/*.*
+
 # Generated measurements
 *.json
 
