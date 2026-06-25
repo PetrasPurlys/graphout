@@ -314,6 +314,6 @@ Separate per-parameter-value KDEs and histograms are also generated.
             }
         }
     ],
-    "args": "-n 12 --proc 6 --out ping_measure -p latency_ms:time=([0-9]*)ms --stack --rot-x -- ping www.stackoverflow.com -l [payload_bytes] -- 100 1000 10000 20000"
+    "args": "-n 12 --proc 6 --out ping_so -p latency_ms:time=([0-9]*)ms --stack --rot-x -- ping www.stackoverflow.com -l [payload_bytes] -- 100 1000 10000 20000"
 }
 ```
