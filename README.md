@@ -27,19 +27,19 @@ However, ping can sometimes time out so less than 48 datapoints is also possible
 
 #### Result: Graph
 
-<img width="640" height="480" alt="latency_ms_avg" src="./img/avg.png" />
+<img width="640" height="480" alt="latency_ms_avg" src="https://raw.githubusercontent.com/PetrasPurlys/graphout/main/img/avg.png" />
 
 #### Result: Kernel Density Estimate (KDE)
 
-<img width="640" height="480" alt="latency_ms_kde" src="./img/kde.png" />
+<img width="640" height="480" alt="latency_ms_kde" src="https://raw.githubusercontent.com/PetrasPurlys/graphout/main/img/kde.png" />
 
 #### Result: Histogram
 
-<img width="640" height="480" alt="latency_ms_hist" src="./img/hist.png" />
+<img width="640" height="480" alt="latency_ms_hist" src="https://raw.githubusercontent.com/PetrasPurlys/graphout/main/img/hist.png" />
 
 #### Result: Histogram + KDE (Stacked)
 
-<img width="640" height="480" alt="latency_ms_stacked" src="./img/stacked.png" />
+<img width="640" height="480" alt="latency_ms_stacked" src="https://raw.githubusercontent.com/PetrasPurlys/graphout/main/img/stacked.png" />
 
 Separate per-parameter-value KDEs and histograms are also generated.
 
